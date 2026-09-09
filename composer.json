@@ -1,0 +1,36 @@
+{
+    "name": "svenlie/websocket",
+    "version": "1.0.0",
+    "type": "typo3-cms-extension",
+    "description": "Generic Redis-backed websocket server extension for TYPO3",
+    "license": ["GPL-2.0-or-later"],
+    "keywords": ["TYPO3 CMS"],
+    "authors": [
+        {
+            "name": "Sven Liebert",
+            "email": "mail@sven-liebert.de"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^13.4",
+        "typo3/cms-frontend": "^13.4",
+        "ext-redis": "*",
+        "amphp/websocket-server": "^4.0",
+        "amphp/redis": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SvenLie\\Websocket\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SvenLie\\Websocket\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "svenlie_websocket"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  SvenLie\Websocket\:
+    resource: '../Classes/*'
+    exclude:
+      - '../Classes/Domain/Model/*'
+
+  # Default, self-contained Redis client so the extension works plug-and-play:
+  # only the Redis connection has to be set in the Extension Configuration.
+  # A host application may override this alias to reuse an existing Redis client.
+  SvenLie\Websocket\Service\RedisClientInterface:
+    alias: SvenLie\Websocket\Service\NativeRedisClient
+
+  SvenLie\Websocket\Handler\RoutingWebsocketClientHandler:
+    arguments:
+      $handlers: !tagged_iterator svenlie_websocket.client_handler
+

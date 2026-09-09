@@ -1,0 +1,11 @@
+# cat=redis; type=string; label=Redis host: Hostname or IP of the Redis server. Leave empty to use the REDIS_HOST environment variable (falls back to 127.0.0.1). Optionally prefixed with a scheme for the websocket server connection (e.g. "tls://redis.example.com" or "rediss://…").
+redisHost =
+
+# cat=redis; type=string; label=Redis port: TCP port of the Redis server. Leave empty to use the REDIS_PORT environment variable (falls back to 6379).
+redisPort =
+
+# cat=redis; type=string; label=Redis password: Leave empty to use the REDIS_PASSWORD environment variable (or no authentication).
+redisPassword =
+
+# cat=redis; type=string; label=Redis database: Numeric Redis database index for the websocket snapshot cache. Leave empty to use the REDIS_DATABASES_WEBSOCKET environment variable (falls back to 0).
+redisDatabase =
