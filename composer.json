@@ -1,6 +1,5 @@
 {
     "name": "svenlie/websocket",
-    "version": "1.0.0",
     "type": "typo3-cms-extension",
     "description": "Generic Redis-backed websocket server extension for TYPO3",
     "license": ["GPL-2.0-or-later"],
