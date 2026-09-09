@@ -31,5 +31,14 @@
         "typo3/cms": {
             "extension-key": "svenlie_websocket"
         }
+    },
+    "require-dev": {
+        "typo3/tailor": "^2.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
     }
 }
